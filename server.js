@@ -2,7 +2,7 @@ var http = require('http');
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 function onRequest (request, response) {
-    console.log('User made a request: ' + request.url);
+    console.log('User made a request: ' + request);
     response.writeHead(200, {'Context-Type': 'text/plain'});
     response.write("Here's some data.\nPort: " + port.toString());
     response.end();
