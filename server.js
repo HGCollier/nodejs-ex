@@ -1,7 +1,7 @@
-var http = require('http');
+var net = require('net');
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
-http.createServer(function (socket) {
+net.createServer(function (socket) {
     console.log('Socket connected.');
 
     socket.on('error', function(error) {
