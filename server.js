@@ -10,9 +10,10 @@ function onRequest (request, response) {
 
 http.createServer(function (socket) {
     onRequest();
+    console.log('Socket connected.');
 
     socket.on('error', function(error) {
-        console.log('Socket connected.');
+        console.log('Error: ' + error.toString());
     });
 
     socket.on('end', function() {
@@ -23,4 +24,4 @@ http.createServer(function (socket) {
         console.log('Socket data: ' + data.toString());
     });
 }).listen(port);
-console.log('Server is running.');
+console.log('Server is running...');
