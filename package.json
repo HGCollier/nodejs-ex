@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-ex",
+  "version": "0.0.1",
+  "description": "Allier's server application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HGCollier/nodejs-ex.git"
+  },
+  "author": "Halden G. Collier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HGCollier/nodejs-ex/issues"
+  },
+  "homepage": "https://github.com/HGCollier/nodejs-ex#readme"
+}
